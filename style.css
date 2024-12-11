@@ -1,0 +1,135 @@
+ 
+ 
+ body {
+  background-color:#F8F8F8 ;
+ }
+ 
+ 
+ 
+ 
+ .Uniform {
+  text-align: center;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Medium screens (Tablets) */
+  @media (max-width: 1024px) {
+    #carouselExampleControls img {
+      height: 70vh; /* Adjusted height for tablet screens */
+    }
+  }
+
+  /* Small screens (Mobile phones) */
+  @media (max-width: 768px) {
+    #carouselExampleControls img {
+      height: 50vh; /* Smaller height for mobile screens */
+    }
+  }
+
+  /* Very small screens (Mobile Portraits) */
+  @media (max-width: 480px) {
+    #carouselExampleControls img {
+      height: 40vh; /* Even smaller height for very small screens */
+    }
+  }
+
+
+  /* Hover effect for images to zoom in */
+.group:hover img {
+    transform: scale(1.1); /* Zoom effect when hovered */
+  }
+  
+  /* Transition effect for smooth zoom */
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Optional: Button appearance when hovered */
+  button:hover {
+    background-color: rgba(255, 165, 0, 1);
+  }
+  
+
+
+  /* Container Styling */
+.container {
+
+  justify-content: center;
+  align-items: center;
+ /* Full viewport height */
+  padding: 20px;
+}
+
+/* Uniform Section */
+.Uniform {
+  text-align: center;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #1E40AF; /* Tailwind's bg-blue-600 */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove default anchor link underline */
+}
+
+.btn-primary:hover {
+  background-color: #2563EB; /* Tailwind's hover:bg-blue-700 */
+}
+
+/* On smaller screens, adjust button size */
+@media (max-width: 600px) {
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Style for the WhatsApp icon */
+.btn-primary i.fab.fa-whatsapp {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin-right: 8px; /* Adds space between the icon and the text */
+}
+
+/* Button Styling */
+.btn-primary {
+  display: inline-flex; /* Ensures icon and text are horizontally aligned */
+  align-items: center; /* Vertically center content */
+  background-color: #006eff; /* Orange background */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove default anchor styles */
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+  background-color: #ff6600; /* Darker orange on hover */
+}
+
+
+.small-button {
+  background-color: blueviolet; /* Orange background */
+  color: white;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 0.8rem; /* Small font size */
+  border-radius: 6px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+  background-color: #ff6600; /* Darker orange on hover */
+}
